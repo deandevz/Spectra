@@ -1,0 +1,66 @@
+{
+  "planner": {
+    "model": "google/gemini-3-flash-preview",
+    "provider": "openai",
+    "base_url": "https://openrouter.ai/api/v1",
+    "api_key_env": "OPENROUTER_API_KEY",
+    "temperature": 0.3,
+    "max_tokens": 8192
+  },
+  "researcher": {
+    "model": "google/gemini-3-flash-preview",
+    "provider": "openai",
+    "base_url": "https://openrouter.ai/api/v1",
+    "api_key_env": "OPENROUTER_API_KEY",
+    "temperature": 0.2,
+    "max_tokens": 15000
+  },
+  "debater_1": {
+    "model": "google/gemini-3-flash-preview",
+    "provider": "openai",
+    "base_url": "https://openrouter.ai/api/v1",
+    "api_key_env": "OPENROUTER_API_KEY",
+    "temperature": 0.7,
+    "max_tokens": 15000
+  },
+  "debater_2": {
+    "model": "google/gemini-3-flash-preview",
+    "provider": "openai",
+    "base_url": "https://openrouter.ai/api/v1",
+    "api_key_env": "OPENROUTER_API_KEY",
+    "temperature": 0.7,
+    "max_tokens": 8192
+  },
+  "debater_3": {
+    "model": "google/gemini-3-flash-preview",
+    "provider": "openai",
+    "base_url": "https://openrouter.ai/api/v1",
+    "api_key_env": "OPENROUTER_API_KEY",
+    "temperature": 0.7,
+    "max_tokens": 15000
+  },
+  "moderator": {
+    "model": "google/gemini-3-pro-preview",
+    "provider": "openai",
+    "base_url": "https://openrouter.ai/api/v1",
+    "api_key_env": "OPENROUTER_API_KEY",
+    "temperature": 0.3,
+    "max_tokens": 15000
+  },
+  "publisher": {
+    "model": "google/gemini-3-pro-preview",
+    "provider": "openai",
+    "base_url": "https://openrouter.ai/api/v1",
+    "api_key_env": "OPENROUTER_API_KEY",
+    "temperature": 0.4,
+    "max_tokens": 30000
+  },
+  "evaluator": {
+    "model": "google/gemini-3-flash-preview",
+    "provider": "openai",
+    "base_url": "https://openrouter.ai/api/v1",
+    "api_key_env": "OPENROUTER_API_KEY",
+    "temperature": 0.2,
+    "max_tokens": 8192
+  }
+}

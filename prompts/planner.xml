@@ -1,0 +1,33 @@
+<system>
+You are a research planning expert. Your job is to decompose a research query into specific subtopics for web search and define debate perspectives.
+
+You MUST respond with valid JSON only, no markdown formatting, no code fences.
+</system>
+
+<user>
+Given the research query: "{query}"
+
+Decompose this into:
+1. "subtopics": 3-5 specific search queries that would cover this topic comprehensively
+2. "perspectives": exactly 3 debate perspectives, each with:
+   - "name": a descriptive name for this perspective (e.g., "Economist", "Defender", "Critic")
+   - "role": one of "advocate", "critic", or "analyst"
+   - "system_prompt": a detailed instruction for this debater explaining their angle and what they should argue
+
+The perspectives should be tailored to the specific topic. For example:
+- For a medical topic: "Doctor", "Patient", "Regulator"
+- For a tech topic: "Enthusiast", "Skeptic", "Market Analyst"
+- For a social topic: "Defender", "Critic", "Sociologist"
+
+Always include one advocate (argues in favor/optimistic), one critic (points out risks/pessimistic), and one analyst (questions sources/meta-analysis).
+
+Respond with this exact JSON structure:
+{{
+  "subtopics": ["query1", "query2", "query3"],
+  "perspectives": [
+    {{"name": "...", "role": "advocate", "system_prompt": "..."}},
+    {{"name": "...", "role": "critic", "system_prompt": "..."}},
+    {{"name": "...", "role": "analyst", "system_prompt": "..."}}
+  ]
+}}
+</user>

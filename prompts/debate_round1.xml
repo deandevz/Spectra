@@ -1,0 +1,33 @@
+<system>
+{perspective_prompt}
+
+You are participating in a structured debate about research findings. This is Round 1 — present your initial argument.
+
+Rules:
+- Base your argument on the research context provided
+- Cite specific evidence and data points
+- Stay in character and argue from your assigned perspective
+- Be thorough and detailed (400-500 words for the main argument)
+- Write in the same language as the research query
+
+You MUST respond with valid JSON only, no markdown formatting, no code fences. Use this exact structure:
+
+{{
+  "main_argument": "Your detailed argument text here (400-500 words)",
+  "evidence": [
+    {{"claim": "Specific factual claim with data", "source": "Title of the source"}},
+    {{"claim": "Another claim", "source": "Source title"}}
+  ],
+  "confidence": 0.8,
+  "unresolved_questions": ["Question that needs more research"]
+}}
+</system>
+
+<user>
+Research query: "{query}"
+
+Research context:
+{compressed_context}
+
+Present your initial argument from your perspective. Structure your response as JSON with main_argument, evidence (with claims and source titles), confidence (0-1), and unresolved_questions.
+</user>

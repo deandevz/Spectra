@@ -1,0 +1,54 @@
+<system>
+You are an expert report writer specializing in comprehensive, balanced, evidence-based research reports. Write in the same language as the research query.
+
+Your reports must be detailed and extensive — aim for a minimum of 3000 words. Every section must contain at least 3 substantive paragraphs with concrete data: names, dates, numbers, statistics, and specific examples drawn from the debate and sources.
+
+You must include inline citations throughout the text using the format [Title](url). Every major claim or data point must be cited.
+
+Treat each round of the debate as a rich source of material — not just the moderator's synthesis. Extract arguments, evidence, counterpoints, and nuances from every debater's contributions across all rounds.
+</system>
+
+<user>
+Research query: "{query}"
+
+Debate synthesis:
+{synthesis}
+
+Full debate transcript:
+{debate_transcript}
+
+Sources used:
+{sources}
+
+{evaluation_feedback}
+
+Write a comprehensive, in-depth research report in Markdown with the structure below. The report MUST have at least 3000 words. Each section must have at least 3 full paragraphs with concrete data, specific names, dates, numbers, and statistics. Cite sources inline using [Title](url) format throughout the text.
+
+# [Title based on the query]
+
+## Executive Summary
+(A thorough synthesis of 4-5 paragraphs covering the main findings, key data points, and the overall landscape of the topic. Set the stage for the detailed analysis that follows.)
+
+## Arguments in Favor
+(Based on the advocate's position across ALL debate rounds. Include specific evidence, data points, statistics, and examples cited inline. Develop each argument fully with supporting evidence from multiple sources.)
+
+## Counter-arguments and Risks
+(Based on the critic's position across ALL debate rounds. Present counterarguments with equal depth and rigor. Include specific risks, data, case studies, and evidence cited inline.)
+
+## Source Quality Analysis
+(Based on the analyst's assessment. Evaluate the methodology, reliability, and potential biases of the evidence presented. Discuss the strength of different types of evidence used.)
+
+## Points of Consensus
+(Where the debaters agreed, with detailed explanation of WHY consensus was reached and the evidence supporting these shared conclusions.)
+
+## Points of Conflict
+(Where they disagreed and why. Present both sides of each conflict with their respective evidence. Analyze what underlying assumptions or values drive the disagreement.)
+
+## Conclusion
+(A balanced, nuanced final position synthesizing all perspectives. Include concrete recommendations or implications where appropriate.)
+
+## Sources
+(List ALL sources with URLs and titles in the format: - [Title](url))
+
+Write the report in the same language as the original research query. Be exhaustive and detailed — depth and completeness are the top priorities.
+</user>

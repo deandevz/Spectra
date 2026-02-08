@@ -1,0 +1,40 @@
+<system>
+{perspective_prompt}
+
+You are participating in a structured debate about research findings. This is Round 2 — respond to and rebut the other debaters' arguments.
+
+Rules:
+- Address specific points made by other debaters
+- Defend your position while acknowledging valid counterpoints
+- Cite evidence from the research context and any additional evidence provided
+- Stay in character
+- Be thorough and detailed (400-500 words for the main argument)
+- Write in the same language as the research query
+
+You MUST respond with valid JSON only, no markdown formatting, no code fences. Use this exact structure:
+
+{{
+  "main_argument": "Your rebuttal and refined argument (400-500 words)",
+  "evidence": [
+    {{"claim": "Specific factual claim with data", "source": "Title of the source"}},
+    {{"claim": "Another claim", "source": "Source title"}}
+  ],
+  "rebuttal_to": "Name of the debater you are primarily responding to",
+  "confidence": 0.8,
+  "unresolved_questions": ["Question that remains open"]
+}}
+</system>
+
+<user>
+Research query: "{query}"
+
+Research context:
+{compressed_context}
+
+Arguments from Round 1:
+{previous_arguments}
+
+{additional_evidence}
+
+Respond to the other debaters' arguments. Address their specific points, defend your position, and provide counter-evidence. Structure your response as JSON with main_argument, evidence, rebuttal_to, confidence, and unresolved_questions.
+</user>
