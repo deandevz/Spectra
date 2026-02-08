@@ -1,5 +1,5 @@
 <p align="center">
-  <h1 align="center">Deep Research Agent</h1>
+  <h1 align="center">Spectra Research Agent</h1>
   <p align="center">
     <strong>Multi-Perspective Debate Architecture for Autonomous Research</strong>
   </p>
@@ -116,8 +116,8 @@ Reports scoring below 7.0/10 average are sent back with specific improvement fee
 ### Installation
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/deep-research.git
-cd deep-research
+git clone https://github.com/deandevz/Spectra.git
+cd Spectra
 
 python -m venv .venv
 source .venv/bin/activate  # Linux/macOS
